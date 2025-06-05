@@ -118,6 +118,7 @@ header {
 
 .hero-img-one {
   position: absolute;
+  display: none;
   top: 2rem;
   left: 10px;
 
@@ -125,6 +126,7 @@ header {
 }
 .hero-img-two {
   position: absolute;
+  display: none;
   top: 4rem;
   right: 10px;
   z-index: 1;
@@ -144,11 +146,12 @@ header {
     left: 35%;
     top: 50px;
   }
-  .cta-box {
-    flex-direction: column;
+  .hero-img-one {
+    display: block;
   }
-}
-@media (min-width: 768px) {
+  .hero-img-two {
+    display: block;
+  }
   .hero-img-three {
     right: -55px;
     top: 6rem;
@@ -241,7 +244,6 @@ section.features {
   display: grid;
   /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
   row-gap: 3rem;
-  padding: 5rem 3rem;
 }
 
 .card-item {
@@ -262,8 +264,9 @@ span {
 }
 @media (min-width: 768px) {
   .card-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 5rem;
+    padding: 5rem 1rem;
     /* align-items: flex-start; */
   }
 }
@@ -278,7 +281,7 @@ span {
 .section-four-grid {
   display: grid;
   gap: 2rem;
-  padding: 1rem 1rem;
+  /* padding: 1rem 1rem; */
 }
 .section-four-item {
   padding: 1rem;
